@@ -1,0 +1,627 @@
+[2025-02-03 16:14:45] [INFO] [background-preinit] [Version] - HV000001: Hibernate Validator 6.2.0.Final
+[2025-02-03 16:14:45] [INFO] [main] [Main] - Starting Main using Java 1.8.0_431 on C3GHWXCNPP with PID 31975 (/Users/abhishekyadav/Documents/NotifyAppL/target/classes started by abhishekyadav in /Users/abhishekyadav/Documents/NotifyAppL)
+[2025-02-03 16:14:45] [DEBUG] [main] [Main] - Running with Spring Boot v2.6.3, Spring v5.3.15
+[2025-02-03 16:14:45] [INFO] [main] [Main] - No active profile set, falling back to default profiles: default
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 15 ms. Found 2 JPA repository interfaces.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 1 ms. Found 1 Elasticsearch repository interfaces.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface org.example.repository.jpa.BlacklistRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface org.example.repository.jpa.SmsRequestRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repository.elastic.SmsElasticRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repository.jpa.BlacklistRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repository.jpa.SmsRequestRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2025-02-03 16:14:45] [INFO] [main] [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[2025-02-03 16:14:46] [INFO] [main] [TomcatWebServer] - Tomcat initialized with port(s): 8082 (http)
+[2025-02-03 16:14:46] [INFO] [main] [Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8082"]
+[2025-02-03 16:14:46] [INFO] [main] [StandardService] - Starting service [Tomcat]
+[2025-02-03 16:14:46] [INFO] [main] [StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[2025-02-03 16:14:46] [INFO] [main] [[/]] - Initializing Spring embedded WebApplicationContext
+[2025-02-03 16:14:46] [INFO] [main] [ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 696 ms
+[2025-02-03 16:14:46] [INFO] [main] [LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-02-03 16:14:46] [INFO] [main] [Version] - HHH000412: Hibernate ORM core version 5.6.4.Final
+[2025-02-03 16:14:46] [INFO] [main] [Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2025-02-03 16:14:46] [INFO] [main] [HikariDataSource] - HikariPool-1 - Starting...
+[2025-02-03 16:14:46] [INFO] [main] [HikariDataSource] - HikariPool-1 - Start completed.
+[2025-02-03 16:14:46] [INFO] [main] [Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[2025-02-03 16:14:46] [INFO] [main] [JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2025-02-03 16:14:46] [INFO] [main] [LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-02-03 16:14:47] [DEBUG] [main] [MainClientExec] - [exchange: 1] start execution
+[2025-02-03 16:14:47] [DEBUG] [main] [RequestAddCookies] - CookieSpec selected: default
+[2025-02-03 16:14:47] [DEBUG] [main] [RequestAuthCache] - Re-using cached 'basic' auth scheme for http://localhost:9200
+[2025-02-03 16:14:47] [DEBUG] [main] [RequestAuthCache] - No credentials for preemptive authentication
+[2025-02-03 16:14:47] [DEBUG] [main] [InternalHttpAsyncClient] - [exchange: 1] Request connection for {}->http://localhost:9200
+[2025-02-03 16:14:47] [DEBUG] [main] [PoolingNHttpClientConnectionManager] - Connection request: [route: {}->http://localhost:9200][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 30]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection leased: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 0 of 30]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] Connection allocated: CPoolProxy{http-outgoing-0 [ACTIVE]}
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:]: Event set [w]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:]: Set timeout 0
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE]: Connected
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] Start connection routing
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] route completed
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Connection route established
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Attempt 1 to execute request
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Target auth state: UNCHALLENGED
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Proxy auth state: UNCHALLENGED
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:]: Set timeout 5000
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> GET / HTTP/1.1
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Content-Length: 0
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Host: localhost:9200
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Connection: Keep-Alive
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:]: Event set [w]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Request completed
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:w]: 225 bytes written
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Content-Length: 0[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Host: localhost:9200[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] Request ready
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:w]: Event cleared [w]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:r]: 977 bytes read
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "X-elastic-product: Elasticsearch[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "content-type: application/json; charset=UTF-8[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "content-length: 539[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "{[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "name" : "C3GHWXCNPP",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "cluster_name" : "elasticsearch",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "cluster_uuid" : "EhMIFUTBRp-WUYpgOvUJbQ",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "version" : {[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "number" : "7.15.2",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_flavor" : "default",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_type" : "tar",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_hash" : "93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_date" : "2021-11-04T14:04:42.515624022Z",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_snapshot" : false,[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "lucene_version" : "8.9.0",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "minimum_wire_compatibility_version" : "6.8.0",[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "minimum_index_compatibility_version" : "6.0.0-beta1"[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  },[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "tagline" : "You Know, for Search"[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "}[\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << HTTP/1.1 200 OK
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << X-elastic-product: Elasticsearch
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << content-type: application/json; charset=UTF-8
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << content-length: 539
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE(539)] Response received
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Response received HTTP/1.1 200 OK
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE(539)] Input ready
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Consume content
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] Connection can be kept alive indefinitely
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Response processed
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] releasing connection
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Releasing connection: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection [id: http-outgoing-0][route: {}->http://localhost:9200] can be kept alive indefinitely
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:r]: Set timeout 0
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection released: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [RestClient] - request [GET http://localhost:9200/] returned [HTTP/1.1 200 OK]
+[2025-02-03 16:14:47] [WARN] [I/O dispatcher 1] [RestClient] - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] [content length: 539; pos: 539; completed: true]
+[2025-02-03 16:14:47] [DEBUG] [main] [MainClientExec] - [exchange: 2] start execution
+[2025-02-03 16:14:47] [DEBUG] [main] [RequestAddCookies] - CookieSpec selected: default
+[2025-02-03 16:14:47] [DEBUG] [main] [RequestAuthCache] - Re-using cached 'basic' auth scheme for http://localhost:9200
+[2025-02-03 16:14:47] [DEBUG] [main] [RequestAuthCache] - No credentials for preemptive authentication
+[2025-02-03 16:14:47] [DEBUG] [main] [InternalHttpAsyncClient] - [exchange: 2] Request connection for {}->http://localhost:9200
+[2025-02-03 16:14:47] [DEBUG] [main] [PoolingNHttpClientConnectionManager] - Connection request: [route: {}->http://localhost:9200][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:14:47] [DEBUG] [main] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:r]: Set timeout 0
+[2025-02-03 16:14:47] [DEBUG] [main] [PoolingNHttpClientConnectionManager] - Connection leased: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:14:47] [DEBUG] [main] [InternalHttpAsyncClient] - [exchange: 2] Connection allocated: CPoolProxy{http-outgoing-0 [ACTIVE]}
+[2025-02-03 16:14:47] [DEBUG] [main] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:r]: Set attribute http.nio.exchange-handler
+[2025-02-03 16:14:47] [DEBUG] [main] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:r]: Event set [w]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] Request ready
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Attempt 1 to execute request
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Target auth state: UNCHALLENGED
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Proxy auth state: UNCHALLENGED
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:w]: Set timeout 5000
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> HEAD /smsrequest?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false HTTP/1.1
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Host: localhost:9200
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Connection: Keep-Alive
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:w]: Event set [w]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Request completed
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][rw:w]: 319 bytes written
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "HEAD /smsrequest?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false HTTP/1.1[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Host: localhost:9200[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] Request ready
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:w]: Event cleared [w]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:r]: 438 bytes read
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "X-elastic-product: Elasticsearch[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "content-type: application/json; charset=UTF-8[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "content-length: 736[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << HTTP/1.1 200 OK
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << X-elastic-product: Elasticsearch
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << content-type: application/json; charset=UTF-8
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << content-length: 736
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] Response received
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Response received HTTP/1.1 200 OK
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 2] Connection can be kept alive indefinitely
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Response processed
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 2] releasing connection
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Releasing connection: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection [id: http-outgoing-0][route: {}->http://localhost:9200] can be kept alive indefinitely
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51781<->127.0.0.1:9200[ACTIVE][r:r]: Set timeout 0
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection released: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:14:47] [DEBUG] [main] [RestClient] - request [HEAD http://localhost:9200/smsrequest?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned [HTTP/1.1 200 OK]
+[2025-02-03 16:14:47] [WARN] [main] [RestClient] - request [HEAD http://localhost:9200/smsrequest?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."]
+[2025-02-03 16:14:47] [WARN] [main] [JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-02-03 16:14:47] [INFO] [main] [EndpointLinksResolver] - Exposing 1 endpoint(s) beneath base path '/actuator'
+[2025-02-03 16:14:47] [INFO] [main] [ConsumerConfig] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-02-03 16:14:47] [INFO] [main] [AppInfoParser] - Kafka version: 3.0.0
+[2025-02-03 16:14:47] [INFO] [main] [AppInfoParser] - Kafka commitId: 8cb0a5e9d3441962
+[2025-02-03 16:14:47] [INFO] [main] [AppInfoParser] - Kafka startTimeMs: 1738579487406
+[2025-02-03 16:14:47] [INFO] [main] [KafkaConsumer] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): my_topic
+[2025-02-03 16:14:47] [INFO] [main] [Http11NioProtocol] - Starting ProtocolHandler ["http-nio-8082"]
+[2025-02-03 16:14:47] [INFO] [main] [TomcatWebServer] - Tomcat started on port(s): 8082 (http) with context path ''
+[2025-02-03 16:14:47] [INFO] [main] [Main] - Started Main in 2.234 seconds (JVM running for 2.612)
+[2025-02-03 16:14:47] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metadata] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Cluster ID: rJKaHQBoToylTI53VOeRgA
+[2025-02-03 16:14:47] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Discovered group coordinator 192.168.0.111:9092 (id: 2147483647 rack: null)
+[2025-02-03 16:14:47] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] (Re-)joining group
+[2025-02-03 16:14:47] [DEBUG] [RMI TCP Connection(4)-10.120.18.224] [MainClientExec] - [exchange: 3] start execution
+[2025-02-03 16:14:47] [DEBUG] [RMI TCP Connection(4)-10.120.18.224] [RequestAddCookies] - CookieSpec selected: default
+[2025-02-03 16:14:47] [DEBUG] [RMI TCP Connection(4)-10.120.18.224] [RequestAuthCache] - Re-using cached 'basic' auth scheme for http://localhost:9200
+[2025-02-03 16:14:47] [DEBUG] [RMI TCP Connection(4)-10.120.18.224] [RequestAuthCache] - No credentials for preemptive authentication
+[2025-02-03 16:14:47] [DEBUG] [RMI TCP Connection(4)-10.120.18.224] [InternalHttpAsyncClient] - [exchange: 3] Request connection for {}->http://localhost:9200
+[2025-02-03 16:14:47] [DEBUG] [RMI TCP Connection(4)-10.120.18.224] [PoolingNHttpClientConnectionManager] - Connection request: [route: {}->http://localhost:9200][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 30]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [PoolingNHttpClientConnectionManager] - Connection leased: [id: http-outgoing-1][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 0 of 30]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalHttpAsyncClient] - [exchange: 3] Connection allocated: CPoolProxy{http-outgoing-1 [ACTIVE]}
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][rw:]: Event set [w]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][rw:]: Set timeout 0
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalIODispatch] - http-outgoing-1 [ACTIVE]: Connected
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalHttpAsyncClient] - [exchange: 3] Start connection routing
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalHttpAsyncClient] - [exchange: 3] route completed
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [MainClientExec] - [exchange: 3] Connection route established
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [MainClientExec] - [exchange: 3] Attempt 1 to execute request
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [MainClientExec] - [exchange: 3] Target auth state: UNCHALLENGED
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [MainClientExec] - [exchange: 3] Proxy auth state: UNCHALLENGED
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][rw:]: Set timeout 30000
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 >> GET /_cluster/health/ HTTP/1.1
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 >> Content-Length: 0
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 >> Host: localhost:9200
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 >> Connection: Keep-Alive
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 >> User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 >> X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][rw:]: Event set [w]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [MainClientExec] - [exchange: 3] Request completed
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][rw:w]: 241 bytes written
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 >> "GET /_cluster/health/ HTTP/1.1[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 >> "Content-Length: 0[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 >> "Host: localhost:9200[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 >> "Connection: Keep-Alive[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 >> "User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 >> "X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 >> "[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalIODispatch] - http-outgoing-1 [ACTIVE] Request ready
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][r:w]: Event cleared [w]
+[2025-02-03 16:14:47] [INFO] [RMI TCP Connection(3)-10.120.18.224] [[/]] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[2025-02-03 16:14:47] [INFO] [RMI TCP Connection(3)-10.120.18.224] [DispatcherServlet] - Initializing Servlet 'dispatcherServlet'
+[2025-02-03 16:14:47] [INFO] [RMI TCP Connection(3)-10.120.18.224] [DispatcherServlet] - Completed initialization in 1 ms
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][r:r]: 840 bytes read
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 << "HTTP/1.1 200 OK[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 << "X-elastic-product: Elasticsearch[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 << "Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 << "content-type: application/json; charset=UTF-8[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 << "content-length: 402[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 << "[\r][\n]"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [wire] - http-outgoing-1 << "{"cluster_name":"elasticsearch","status":"yellow","timed_out":false,"number_of_nodes":1,"number_of_data_nodes":1,"active_primary_shards":8,"active_shards":8,"relocating_shards":0,"initializing_shards":0,"unassigned_shards":1,"delayed_unassigned_shards":0,"number_of_pending_tasks":0,"number_of_in_flight_fetch":0,"task_max_waiting_in_queue_millis":0,"active_shards_percent_as_number":88.88888888888889}"
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 << HTTP/1.1 200 OK
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 << X-elastic-product: Elasticsearch
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 << Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 << content-type: application/json; charset=UTF-8
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [headers] - http-outgoing-1 << content-length: 402
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalIODispatch] - http-outgoing-1 [ACTIVE(402)] Response received
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [MainClientExec] - [exchange: 3] Response received HTTP/1.1 200 OK
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalIODispatch] - http-outgoing-1 [ACTIVE(402)] Input ready
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [MainClientExec] - [exchange: 3] Consume content
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalHttpAsyncClient] - [exchange: 3] Connection can be kept alive indefinitely
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [MainClientExec] - [exchange: 3] Response processed
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalHttpAsyncClient] - [exchange: 3] releasing connection
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [PoolingNHttpClientConnectionManager] - Releasing connection: [id: http-outgoing-1][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [PoolingNHttpClientConnectionManager] - Connection [id: http-outgoing-1][route: {}->http://localhost:9200] can be kept alive indefinitely
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][r:r]: Set timeout 0
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [PoolingNHttpClientConnectionManager] - Connection released: [id: http-outgoing-1][route: {}->http://localhost:9200][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:14:47] [DEBUG] [I/O dispatcher 13] [InternalIODispatch] - http-outgoing-1 [ACTIVE] [content length: 402; pos: 402; completed: true]
+[2025-02-03 16:14:47] [DEBUG] [RMI TCP Connection(4)-10.120.18.224] [RestClient] - request [GET http://localhost:9200/_cluster/health/] returned [HTTP/1.1 200 OK]
+[2025-02-03 16:14:47] [WARN] [RMI TCP Connection(4)-10.120.18.224] [RestClient] - request [GET http://localhost:9200/_cluster/health/] returned 1 warnings: [299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."]
+[2025-02-03 16:14:58] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Group coordinator 192.168.0.111:9092 (id: 2147483647 rack: null) is unavailable or invalid due to cause: null.isDisconnected: true. Rediscovery will be attempted.
+[2025-02-03 16:15:15] [INFO] [http-nio-8082-exec-2] [BlacklistController] - Phone number not valid: 111111
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting generation due to: consumer pro-actively leaving the group
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: consumer pro-actively leaving the group
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [KafkaConsumer] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting generation due to: consumer pro-actively leaving the group
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: consumer pro-actively leaving the group
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics] - Metrics scheduler closed
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics] - Metrics reporters closed
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [AppInfoParser] - App info kafka.consumer for consumer-group_id-1 unregistered
+[2025-02-03 16:15:29] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [KafkaMessageListenerContainer] - group_id: Consumer stopped
+[2025-02-03 16:15:29] [DEBUG] [SpringApplicationShutdownHook] [PoolingNHttpClientConnectionManager] - Connection manager is shutting down
+[2025-02-03 16:15:29] [DEBUG] [SpringApplicationShutdownHook] [ManagedNHttpClientConnectionImpl] - http-outgoing-1 127.0.0.1:51787<->127.0.0.1:9200[ACTIVE][r:r]: Close
+[2025-02-03 16:15:29] [DEBUG] [I/O dispatcher 13] [InternalIODispatch] - http-outgoing-1 [CLOSED]: Disconnected
+[2025-02-03 16:15:29] [DEBUG] [SpringApplicationShutdownHook] [PoolingNHttpClientConnectionManager] - Connection manager shut down
+[2025-02-03 16:15:29] [INFO] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-02-03 16:15:29] [INFO] [SpringApplicationShutdownHook] [HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2025-02-03 16:15:29] [INFO] [SpringApplicationShutdownHook] [HikariDataSource] - HikariPool-1 - Shutdown completed.
+[2025-02-03 16:16:08] [INFO] [background-preinit] [Version] - HV000001: Hibernate Validator 6.2.0.Final
+[2025-02-03 16:16:08] [INFO] [main] [Main] - Starting Main using Java 1.8.0_431 on C3GHWXCNPP with PID 32020 (/Users/abhishekyadav/Documents/NotifyAppL/target/classes started by abhishekyadav in /Users/abhishekyadav/Documents/NotifyAppL)
+[2025-02-03 16:16:08] [DEBUG] [main] [Main] - Running with Spring Boot v2.6.3, Spring v5.3.15
+[2025-02-03 16:16:08] [INFO] [main] [Main] - No active profile set, falling back to default profiles: default
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 5 ms. Found 1 Elasticsearch repository interfaces.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface org.example.repository.jpa.BlacklistRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface org.example.repository.jpa.SmsRequestRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 4 ms. Found 0 Reactive Elasticsearch repository interfaces.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repository.elastic.SmsElasticRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repository.jpa.BlacklistRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationExtensionSupport] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface org.example.repository.jpa.SmsRequestRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+[2025-02-03 16:16:09] [INFO] [main] [RepositoryConfigurationDelegate] - Finished Spring Data repository scanning in 3 ms. Found 0 Redis repository interfaces.
+[2025-02-03 16:16:09] [INFO] [main] [TomcatWebServer] - Tomcat initialized with port(s): 8082 (http)
+[2025-02-03 16:16:09] [INFO] [main] [Http11NioProtocol] - Initializing ProtocolHandler ["http-nio-8082"]
+[2025-02-03 16:16:09] [INFO] [main] [StandardService] - Starting service [Tomcat]
+[2025-02-03 16:16:09] [INFO] [main] [StandardEngine] - Starting Servlet engine: [Apache Tomcat/9.0.56]
+[2025-02-03 16:16:09] [INFO] [main] [[/]] - Initializing Spring embedded WebApplicationContext
+[2025-02-03 16:16:09] [INFO] [main] [ServletWebServerApplicationContext] - Root WebApplicationContext: initialization completed in 617 ms
+[2025-02-03 16:16:09] [INFO] [main] [LogHelper] - HHH000204: Processing PersistenceUnitInfo [name: default]
+[2025-02-03 16:16:09] [INFO] [main] [Version] - HHH000412: Hibernate ORM core version 5.6.4.Final
+[2025-02-03 16:16:09] [INFO] [main] [Version] - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[2025-02-03 16:16:09] [INFO] [main] [HikariDataSource] - HikariPool-1 - Starting...
+[2025-02-03 16:16:09] [INFO] [main] [HikariDataSource] - HikariPool-1 - Start completed.
+[2025-02-03 16:16:09] [INFO] [main] [Dialect] - HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[2025-02-03 16:16:09] [INFO] [main] [JtaPlatformInitiator] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[2025-02-03 16:16:09] [INFO] [main] [LocalContainerEntityManagerFactoryBean] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[2025-02-03 16:16:10] [DEBUG] [main] [MainClientExec] - [exchange: 1] start execution
+[2025-02-03 16:16:10] [DEBUG] [main] [RequestAddCookies] - CookieSpec selected: default
+[2025-02-03 16:16:10] [DEBUG] [main] [RequestAuthCache] - Re-using cached 'basic' auth scheme for http://localhost:9200
+[2025-02-03 16:16:10] [DEBUG] [main] [RequestAuthCache] - No credentials for preemptive authentication
+[2025-02-03 16:16:10] [DEBUG] [main] [InternalHttpAsyncClient] - [exchange: 1] Request connection for {}->http://localhost:9200
+[2025-02-03 16:16:10] [DEBUG] [main] [PoolingNHttpClientConnectionManager] - Connection request: [route: {}->http://localhost:9200][total kept alive: 0; route allocated: 0 of 10; total allocated: 0 of 30]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection leased: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 0 of 30]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] Connection allocated: CPoolProxy{http-outgoing-0 [ACTIVE]}
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:]: Set attribute http.nio.exchange-handler
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:]: Event set [w]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:]: Set timeout 0
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE]: Connected
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:]: Set attribute http.nio.http-exchange-state
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] Start connection routing
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] route completed
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Connection route established
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Attempt 1 to execute request
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Target auth state: UNCHALLENGED
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Proxy auth state: UNCHALLENGED
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:]: Set timeout 5000
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> GET / HTTP/1.1
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Content-Length: 0
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Host: localhost:9200
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Connection: Keep-Alive
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:]: Event set [w]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Request completed
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:w]: 225 bytes written
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "GET / HTTP/1.1[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Content-Length: 0[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Host: localhost:9200[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] Request ready
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:w]: Event cleared [w]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:r]: 977 bytes read
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "X-elastic-product: Elasticsearch[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "content-type: application/json; charset=UTF-8[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "content-length: 539[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "{[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "name" : "C3GHWXCNPP",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "cluster_name" : "elasticsearch",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "cluster_uuid" : "EhMIFUTBRp-WUYpgOvUJbQ",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "version" : {[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "number" : "7.15.2",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_flavor" : "default",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_type" : "tar",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_hash" : "93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_date" : "2021-11-04T14:04:42.515624022Z",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "build_snapshot" : false,[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "lucene_version" : "8.9.0",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "minimum_wire_compatibility_version" : "6.8.0",[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "    "minimum_index_compatibility_version" : "6.0.0-beta1"[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  },[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "  "tagline" : "You Know, for Search"[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "}[\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << HTTP/1.1 200 OK
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << X-elastic-product: Elasticsearch
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << content-type: application/json; charset=UTF-8
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << content-length: 539
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE(539)] Response received
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Response received HTTP/1.1 200 OK
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE(539)] Input ready
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Consume content
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] Connection can be kept alive indefinitely
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 1] Response processed
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 1] releasing connection
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Releasing connection: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection [id: http-outgoing-0][route: {}->http://localhost:9200] can be kept alive indefinitely
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:r]: Set timeout 0
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection released: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [RestClient] - request [GET http://localhost:9200/] returned [HTTP/1.1 200 OK]
+[2025-02-03 16:16:10] [WARN] [I/O dispatcher 1] [RestClient] - request [GET http://localhost:9200/] returned 1 warnings: [299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] [content length: 539; pos: 539; completed: true]
+[2025-02-03 16:16:10] [DEBUG] [main] [MainClientExec] - [exchange: 2] start execution
+[2025-02-03 16:16:10] [DEBUG] [main] [RequestAddCookies] - CookieSpec selected: default
+[2025-02-03 16:16:10] [DEBUG] [main] [RequestAuthCache] - Re-using cached 'basic' auth scheme for http://localhost:9200
+[2025-02-03 16:16:10] [DEBUG] [main] [RequestAuthCache] - No credentials for preemptive authentication
+[2025-02-03 16:16:10] [DEBUG] [main] [InternalHttpAsyncClient] - [exchange: 2] Request connection for {}->http://localhost:9200
+[2025-02-03 16:16:10] [DEBUG] [main] [PoolingNHttpClientConnectionManager] - Connection request: [route: {}->http://localhost:9200][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:16:10] [DEBUG] [main] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:r]: Set timeout 0
+[2025-02-03 16:16:10] [DEBUG] [main] [PoolingNHttpClientConnectionManager] - Connection leased: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:16:10] [DEBUG] [main] [InternalHttpAsyncClient] - [exchange: 2] Connection allocated: CPoolProxy{http-outgoing-0 [ACTIVE]}
+[2025-02-03 16:16:10] [DEBUG] [main] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:r]: Set attribute http.nio.exchange-handler
+[2025-02-03 16:16:10] [DEBUG] [main] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:r]: Event set [w]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] Request ready
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Attempt 1 to execute request
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Target auth state: UNCHALLENGED
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Proxy auth state: UNCHALLENGED
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:w]: Set timeout 5000
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> HEAD /smsrequest?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false HTTP/1.1
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Host: localhost:9200
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> Connection: Keep-Alive
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 >> X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:w]: Event set [w]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Request completed
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][rw:w]: 319 bytes written
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "HEAD /smsrequest?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false HTTP/1.1[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Host: localhost:9200[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "User-Agent: elasticsearch-java/7.15.2-SNAPSHOT (Java/1.8.0_431)[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "X-Elastic-Client-Meta: es=7.15.2-SNAPSHOT,jv=1.8,t=7.15.2-SNAPSHOT,hc=4.1.5[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 >> "[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] Request ready
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:w]: Event cleared [w]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:r]: 438 bytes read
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "X-elastic-product: Elasticsearch[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "content-type: application/json; charset=UTF-8[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "content-length: 736[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [wire] - http-outgoing-0 << "[\r][\n]"
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << HTTP/1.1 200 OK
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << X-elastic-product: Elasticsearch
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << Warning: 299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << content-type: application/json; charset=UTF-8
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [headers] - http-outgoing-0 << content-length: 736
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalIODispatch] - http-outgoing-0 [ACTIVE] Response received
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Response received HTTP/1.1 200 OK
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 2] Connection can be kept alive indefinitely
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [MainClientExec] - [exchange: 2] Response processed
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [InternalHttpAsyncClient] - [exchange: 2] releasing connection
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:r]: Remove attribute http.nio.exchange-handler
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Releasing connection: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 0; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection [id: http-outgoing-0][route: {}->http://localhost:9200] can be kept alive indefinitely
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [ManagedNHttpClientConnectionImpl] - http-outgoing-0 127.0.0.1:51849<->127.0.0.1:9200[ACTIVE][r:r]: Set timeout 0
+[2025-02-03 16:16:10] [DEBUG] [I/O dispatcher 1] [PoolingNHttpClientConnectionManager] - Connection released: [id: http-outgoing-0][route: {}->http://localhost:9200][total kept alive: 1; route allocated: 1 of 10; total allocated: 1 of 30]
+[2025-02-03 16:16:10] [DEBUG] [main] [RestClient] - request [HEAD http://localhost:9200/smsrequest?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned [HTTP/1.1 200 OK]
+[2025-02-03 16:16:10] [WARN] [main] [RestClient] - request [HEAD http://localhost:9200/smsrequest?ignore_throttled=false&ignore_unavailable=false&expand_wildcards=open%2Cclosed&allow_no_indices=false] returned 1 warnings: [299 Elasticsearch-7.15.2-93d5a7f6192e8a1a12e154a2b81bf6fa7309da0c "Elasticsearch built-in security features are not enabled. Without authentication, your cluster could be accessible to anyone. See https://www.elastic.co/guide/en/elasticsearch/reference/7.15/security-minimal-setup.html to enable security."]
+[2025-02-03 16:16:10] [WARN] [main] [JpaBaseConfiguration$JpaWebConfiguration] - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2025-02-03 16:16:10] [INFO] [main] [EndpointLinksResolver] - Exposing 1 endpoint(s) beneath base path '/actuator'
+[2025-02-03 16:16:10] [INFO] [main] [ConsumerConfig] - ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [localhost:9092]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = consumer-group_id-1
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group_id
+	group.instance.id = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.2
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+[2025-02-03 16:16:10] [INFO] [main] [AppInfoParser] - Kafka version: 3.0.0
+[2025-02-03 16:16:10] [INFO] [main] [AppInfoParser] - Kafka commitId: 8cb0a5e9d3441962
+[2025-02-03 16:16:10] [INFO] [main] [AppInfoParser] - Kafka startTimeMs: 1738579570669
+[2025-02-03 16:16:10] [INFO] [main] [KafkaConsumer] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Subscribed to topic(s): my_topic
+[2025-02-03 16:16:10] [INFO] [main] [TomcatWebServer] - Tomcat started on port(s): 8082 (http) with context path ''
+[2025-02-03 16:16:10] [INFO] [main] [Main] - Started Main in 2.059 seconds (JVM running for 2.465)
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting generation due to: consumer pro-actively leaving the group
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: consumer pro-actively leaving the group
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [KafkaConsumer] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Unsubscribed all topics or patterns and assigned partitions
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Resetting generation due to: consumer pro-actively leaving the group
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [ConsumerCoordinator] - [Consumer clientId=consumer-group_id-1, groupId=group_id] Request joining group due to: consumer pro-actively leaving the group
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics] - Metrics scheduler closed
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics] - Closing reporter org.apache.kafka.common.metrics.JmxReporter
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [Metrics] - Metrics reporters closed
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [AppInfoParser] - App info kafka.consumer for consumer-group_id-1 unregistered
+[2025-02-03 16:16:10] [INFO] [org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] [KafkaMessageListenerContainer] - group_id: Consumer stopped
+[2025-02-03 16:16:10] [DEBUG] [SpringApplicationShutdownHook] [PoolingNHttpClientConnectionManager] - Connection manager is shutting down
+[2025-02-03 16:16:10] [DEBUG] [SpringApplicationShutdownHook] [PoolingNHttpClientConnectionManager] - Connection manager shut down
+[2025-02-03 16:16:10] [INFO] [SpringApplicationShutdownHook] [LocalContainerEntityManagerFactoryBean] - Closing JPA EntityManagerFactory for persistence unit 'default'
+[2025-02-03 16:16:10] [INFO] [SpringApplicationShutdownHook] [HikariDataSource] - HikariPool-1 - Shutdown initiated...
+[2025-02-03 16:16:10] [INFO] [SpringApplicationShutdownHook] [HikariDataSource] - HikariPool-1 - Shutdown completed.
